@@ -1,0 +1,23 @@
+# Importar TensorFlow e NumPy
+import tensorflow as tf
+import numpy as np
+
+# Importar a Sionna
+try:
+    import sionna as sn
+except ImportError as e:
+    # Instala a Sionna se o pacote ja não estiver instalado
+    import os
+    os.system("pip install sionna")
+    import sionna as sn
+
+# Para a plotagem
+%matplotlib inline
+
+import matplotlib.pyplot as plt
+
+# Para medir performance
+import time
+
+# Para implementação das camadas Keras
+from tensorflow.keras import Model
